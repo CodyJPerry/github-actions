@@ -7,7 +7,7 @@ on:
     branches:
       - main
 jobs:
-  lint-and-build
+  lint-and-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -25,5 +25,3 @@ jobs:
         run: npm run lint
       - name: Build frontend
         run: npm run build
-
-  
